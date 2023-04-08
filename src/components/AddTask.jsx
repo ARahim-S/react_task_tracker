@@ -41,7 +41,7 @@ const AddTask = ({ addTask }) => {
         <div className="form-control">
           <label htmlFor="day">Day & Time</label>
           <input
-            type="text"
+            type="datetime-local"
             name="day"
             id="day"
             placeholder="Add Day & Time"
