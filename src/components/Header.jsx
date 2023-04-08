@@ -1,14 +1,15 @@
 import PropTypes from "prop-types";
 import Button from "./Button";
 
-const Header = ({ title }) => {
-  const handleClick = () => {
-    console.log("click");
-  };
+const Header = ({ title, showTaskForm, showTaskBar }) => {
   return (
     <div className="header">
       <h1>{title}</h1>
-      <Button color="blue" text="Show Add Task Bar" handleClick={handleClick} />
+      <Button
+        color={showTaskBar ? "red" : "blue"}
+        text={showTaskBar ? "Close Add Task Bar" : "Show Add Task Bar"}
+        showTaskForm={showTaskForm}
+      />
     </div>
   );
 };

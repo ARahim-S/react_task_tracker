@@ -8,6 +8,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -16,13 +20,15 @@ html {
 }
 
 .header {
+  margin: 1rem 0 0 0;
   padding: 2rem;
   width: 50rem;
   background-color: rgb(64, 216, 216);
   text-align: center;
   font-size: 2rem;
   color: white;
-  border-radius: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   background: rgb(63, 94, 251);
   background: linear-gradient(
     90deg,
@@ -40,4 +46,76 @@ html {
   font-size: 2rem;
   font-weight: bold;
   color: antiquewhite;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 50rem;
+  text-align: center;
+  background-color: cadetblue;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  align-items: center;
+}
+
+.task {
+  width: 40rem;
+  background-color: beige;
+  margin: 0.8rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.done {
+  border-left: 10px solid rgb(95, 16, 16);
+  text-decoration: line-through;
+  background-color: grey;
+}
+
+.task h3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.task p {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form {
+  background-color: brown;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-control label {
+  color: #ffffff;
+  font-weight: bold;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.form-control input {
+  width: 40rem;
+  padding: 0.7rem;
+}
+.form-control button {
+  width: 40rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: blueviolet;
+  color: #ffffff;
+  cursor: pointer;
 }

@@ -1,10 +1,10 @@
-const Button = ({ handleClick, color, text }) => {
+const Button = ({ handleClick, color, text, showTaskForm }) => {
   return (
     <div>
       <button
         className="btn"
         style={{ backgroundColor: color }}
-        onClick={handleClick}
+        onClick={showTaskForm}
       >
         {text}
       </button>
